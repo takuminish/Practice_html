@@ -1,0 +1,31 @@
+ .text{
+   -webkit-border-radius: 50px;
+ }
+ .point {
+   display:inline-flex;
+   margin-bottom:2em;
+ }
+ .skill {
+   margin-bottom:2em;
+ }
+ .center {
+   margin-bottom:2em;
+ }
+ .smile > span{
+   color : rgb(230,0,0);
+ }
+ .pure > span{
+   color : rgb(0,230,0);
+ }
+ .cool > span{
+   color : rgb(0,0,230);
+ }
+ .smile > .text{
+   background-color : rgba(230,0,0,0.2);
+ }
+ .pure > .text{
+   background-color : rgba(0,230,0,0.2);
+ }
+ .cool > .text{
+   background-color : rgba(0,0,230,0.2);
+ }

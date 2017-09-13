@@ -39,6 +39,5 @@ z-index
 position
 fixedにすると画面をスクロールしても同じ位置に表示し続ける。
 
-display
 
 

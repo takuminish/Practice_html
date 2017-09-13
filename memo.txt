@@ -1,0 +1,44 @@
+#htmlファイル
+
+jsファイルを分離するとき
+<script src="jsファイル名"></script>
+
+cssファイルを分離するとき
+<link rel=stylesheet type="text/css" href="cssファイル名">
+
+divタグ
+<div></div>で囲まれた内容を1グループとする。classなどを定義してcssファイルや、jsファイルで操作する。
+
+#cssファイル
+classを指定する場合　.クラス名
+idを指定する場合     #id名
+
+.クラス名 {
+  なにか : なにか;
+}
+
+width
+横の長さを指定
+数値で指定する方法と%で指定する方法がある
+
+margin
+領域間のスペースを設定する。0 auto により左右中央に配置できる
+
+padding
+領域内のスペースを設定する。
+
+border
+線で囲む　線の太さ 線の種類 線の色を設定する。
+
+background
+背景の色を設定する
+
+z-index
+どの要素を手前に表示するかを決める。値が大きいほど手前に表示される。
+
+position
+fixedにすると画面をスクロールしても同じ位置に表示し続ける。
+
+display
+
+

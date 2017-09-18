@@ -1,0 +1,31 @@
+.image_select{
+    position: relative;
+    width: 640px;
+}
+
+/* 吹き出し本体 */
+.balloon{
+  position: absolute;
+  padding: 20px;
+  background-color: #ff0000;
+  display: inline-block;
+  border-radius: 25%;
+  top : 5%;
+  left : 80%;
+  display: none;
+}
+
+/* beforeで三角を表現 */
+.balloon::before{
+  content: '';
+  position: absolute;
+  left: 35%;
+  top: 100%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #ff0000;
+  border-left: 15px solid transparent;
+  
+}

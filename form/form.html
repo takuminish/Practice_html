@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <link rel=stylesheet type="text/css" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="form.js"></script>
+  </head>
+  <body>
+    <form>
+      <div class="point">
+        <div class="smile">
+	  <span>スマイル</span>
+	  <input type="text" class="text">
+        </div>
+        <div class="pure">
+	  <span>ピュア</span>
+	  <input type="text" class="text">
+        </div>
+        <div class="cool">
+	  <span>クール</span>
+	  <input type="text" class="text">
+        </div>
+      </div>
+      <div class="skill">
+	特技
+　　　  <select id="skill_select">
+	  <option value="hantei">判定強化</option>
+	  <option value="else_hantei">判定強化以外</option>
+        </select><br/>
+	<div class="skill_ability">
+          <input type="number">ごとに <input type="number">%の確率でスコアが <input type="number">P増える
+	</div>
+      </div>
+      <div class="center">
+	センタースキル<br/>
+      <select name="center_skill">
+	<option value="A">A</option>
+	<option value="B">B</option>
+	<option value="C">C</option>
+      </select>
+      Pが
+      <input type="number">%UPする
+      +
+      <select name="center_skill+">
+	<option value="A">A</option>
+	<option value="B">B</option>
+	<option value="C">C</option>
+      </select>
+      メンバーはさらに
+      <select name="center_skill+">
+	<option value="A">A</option>
+	<option value="B">B</option>
+	<option value="C">C</option>
+      </select>
+      Pが
+      <input type="number">%UPする
+      </div>
+
+      <button type="button" class="btn">入力完了</button>
+ </form>
+  </body>
+  </html>

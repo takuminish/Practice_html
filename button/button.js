@@ -15,5 +15,50 @@ $( function() {
 	    
 	}
     });
-	
+    $(".difficulty_button").click( function(e) {
+	var id =  "#" + this.id;
+	switch(id){
+	case "#easy":
+            $("#easy").attr("class","difficulty_button_active");
+	    $("#normal").attr("class","difficulty_button");
+	    $("#hard").attr("class","difficulty_button");
+	    $("#expert").attr("class","difficulty_button");
+	    $("#master").attr("class","difficulty_button");
+
+	    break;
+	case "#normal":
+            $("#easy").attr("class","difficulty_button");
+	    $("#normal").attr("class","difficulty_button_active");
+	    $("#hard").attr("class","difficulty_button");
+	    $("#expert").attr("class","difficulty_button");
+	    $("#master").attr("class","difficulty_button");
+
+	    break;
+	case "#hard":
+            $("#easy").attr("class","difficulty_button");
+	    $("#normal").attr("class","difficulty_button");
+	    $("#hard").attr("class","difficulty_button_active");
+	    $("#expert").attr("class","difficulty_button");
+	    $("#master").attr("class","difficulty_button");
+
+	    break;
+	case "#expert":
+            $("#easy").attr("class","difficulty_button");
+	    $("#normal").attr("class","difficulty_button");
+	    $("#hard").attr("class","difficulty_button");
+	    $("#expert").attr("class","difficulty_button_active");
+	    $("#master").attr("class","difficulty_button");
+
+	    break;
+	case "#master":
+            $("#easy").attr("class","difficulty_button");
+	    $("#normal").attr("class","difficulty_button");
+	    $("#hard").attr("class","difficulty_button");
+	    $("#expert").attr("class","difficulty_button");
+	    $("#master").attr("class","difficulty_button_active");
+
+	    break;
+	}
+
+    });
 });

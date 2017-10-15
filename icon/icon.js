@@ -9,14 +9,25 @@ $(function() {
     //==== アイコンの座標を求め、アイコンを生成
     for ( var k = 0; k < 9; k++ ) {
 
-	iconx[k] = getx(k) + 800;  // アイコンのx座標を求め代入
-	icony[k] = gety(k);        // アイコンのy座標を求め代入
+	iconx[k] = getx(k) + ( $(window).width() / 2 ) - 50 ;  // アイコンのx座標を求め代入
+	icony[k] = gety(k);                                    // アイコンのy座標を求め代入
 
 	//---- アイコンを生成
 	$('<div id="image' + k + '" class="image"></div>').css({
 	    left: iconx[k]  , top:icony[k]
 	}).appendTo('body');
     }
+
+    $(window).on('resize' , function() {
+        for ( var k = 0; k < 9; k++ ) {
+
+    	    iconx[k] = getx(k) + ( $(window).width() / 2 ) - 50;  // アイコンのx座標を求め代入
+	    icony[k] = gety(k);                                   // アイコンのy座標を求め代入
+
+	//---- アイコンを生成
+	    $("#"+"image"+k).css({ left: iconx[k]  , top:icony[k] });
+        }
+    });
     //==== アイコンを動かす
     $('.image').mousedown(function(e){
 	var id = "#" + this.id;                    // 今動かしているアイコンのidを入手
@@ -57,9 +68,9 @@ $(function() {
 
 //==== アイコンのx座標を求める
 function getx(n) {
-    return 500 *  Math.cos((n+0.47)*(Math.PI/9));
+    return ( ( $(window).width() / 2 ) - 100 ) *  Math.cos((n+0.47)*(Math.PI/9));
 }
 //==== アイコンのy座標を求める
 function gety(n) {
-    return 500 * Math.sin((n+0.47)*(Math.PI/9));
+    return ( $(window).height() - 100 ) * Math.sin((n+0.47)*(Math.PI/9));
 }

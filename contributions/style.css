@@ -1,0 +1,39 @@
+.contribution {
+    position: absolute;
+    width:10px;
+    height:10px;
+    background:#f5f5f5;
+}
+
+.balloon {
+    color: #ffffff;
+
+}
+/* 吹き出し本体 */
+.balloon{
+    z-index:1;
+  position: absolute;
+  width:200px;
+  height:25px;
+  background-color: rgba(0,0,0,0.8);
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  top : 50px;
+  left : 200px;
+  display: none;
+}
+
+/* beforeで三角を表現 */
+.balloon::before{
+  content: '';
+  position: absolute;
+  left: 45%;
+  top: 100%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 5px solid transparent;
+  border-top: 5px solid  rgba(0,0,0,0.8);
+  border-left: 5px solid transparent;
+  
+}

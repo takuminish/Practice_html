@@ -40,7 +40,7 @@ $(function() {
 		    var tmpid = "#" + "image" + k;        // 接触した相手のidを代入
 		    iconx[k] = iconx[crrent];             // 接触した相手の位置を今動かしているアイコンの初期位置に変更
 	            icony[k] = icony[crrent];             // 接触した相手の位置を今動かしているアイコンの初期位置に変更
-		    $(tmpid).css({top: icony[k],left:iconx[k]});      // アイコンの位置を反映
+		    $(tmpid).animate({top: icony[k],left:iconx[k]},'normal');      // アイコンの位置を反映
 		    iconx[crrent] = xx;                   // 今動かしているアイコンの初期位置を接触した相手の位置に変更
 		    icony[crrent] = yy;                   // 今動かしているアイコンの初期位置を接触した相手の位置に変更
 		}

@@ -1,0 +1,70 @@
+body {
+  background: url(image/pink.png);
+}
+
+/* テキストフィールド */
+input[type="text"] {
+  border-radius: 10px;  /*角丸に*/
+  width: 200px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #bebebe;
+  font-size: 1em;
+  text-indent: 0.7em;
+}
+
+h2{
+  width:300px;
+  height:25px;
+  font-size: 1.2em;/* 文字の大きさ */
+  font-weight: bold;/* 文字の太さ */
+  color: #fff;/* 文字の色 */
+  border: 2px dashed #ffecef;/* ステッチの太さ・種類・カラー */
+  background: #F9B8CD;/* 背景色 */
+  border-radius: 8px;/* 四隅の丸み */
+  box-shadow: 0 0 3px 3px #F9B8CD;
+  margin: 0 0 1.5em;
+}
+/* パスワード */
+input[type="password"] {
+  border-radius: 10px; /* 角丸に */
+  width: 200px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #bebebe;
+  font-size: 1em;
+  text-indent: 0.7em;
+}
+/* タイトルロゴ */
+.img {
+  text-align: center; 
+}
+/* ログインフォーム */
+.loginform {
+  position: relative;
+  background: url(image/form.png) no-repeat;
+  background-size: 500px 550px;
+  align: center;
+  width: 500px;
+  height: 550px;
+}
+/* 送信画像 */
+.submit {
+  width 118px;
+  height: 50px;
+}
+/* 新規登録 */
+.signup {
+  width 118px;
+  height: 50px;
+}
+/*入力フィールド*/
+.field {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 60px;
+  margin-left: 30px;
+}

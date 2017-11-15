@@ -1,0 +1,25 @@
+body {
+  background: url(image/pink.png);
+}
+
+#loader-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #ffffff;
+  z-index: 1;
+  background: url(image/pink.png);
+}
+ 
+#loader-bg #loader {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  margin-left: -250px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
